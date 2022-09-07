@@ -1,0 +1,27 @@
+@import '../../variables';
+@import '../../mixins';
+
+
+
+.wrapper {
+    background-color: $md;
+    width: 16vw;
+    height: 100vh;
+    box-shadow: 0 0 10px $md;
+
+    .header {
+        padding: 24px 16px;
+
+        h3 {
+            margin: 0;
+            padding: 0;
+            color: #eee;
+            font-size: 14px;
+        }
+    }
+
+    button {
+        @include collectionButton($md);
+    }
+
+}

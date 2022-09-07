@@ -1,0 +1,27 @@
+@mixin collectionButton($back) {
+    @include reset-button();
+    width: 100%;
+    padding: 16px 24px;
+    font-size: 16px;
+    cursor: pointer;
+    text-align: left;
+    color: #fff;
+    transition: background .2s ease-in-out;
+    display: flex;
+    align-items: center;
+
+    img {
+        width: 30px;
+        height: 30px;
+        margin-right: 12px;
+    }
+
+    &:hover {
+        background: lighten($color: $back, $amount: 5);
+    }
+}
+
+@mixin reset-button {
+    background: none;
+    border: none;
+}
